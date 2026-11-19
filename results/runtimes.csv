@@ -1,0 +1,41 @@
+image_id,mode,seconds,ok,source
+s1233,full,107.6,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s1287,full,58.0,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s0011,full,61.5,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s0058,full,56.6,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s0250,full,56.7,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s1233,fast,60.9,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s1287,fast,53.8,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s0011,fast,56.3,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s0058,fast,55.0,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s0250,fast,53.4,True,"notebook output (first batch; file was overwritten by a bug, since fixed)"
+s0344,full,56.0,True,runtimes.csv
+s0344,fast,55.2,True,runtimes.csv
+s0358,full,60.4,True,runtimes.csv
+s0358,fast,57.0,True,runtimes.csv
+s0419,full,54.8,True,runtimes.csv
+s0419,fast,50.5,True,runtimes.csv
+s0454,full,56.9,True,runtimes.csv
+s0454,fast,54.0,True,runtimes.csv
+s0461,full,54.0,True,runtimes.csv
+s0461,fast,53.8,True,runtimes.csv
+s0477,full,54.3,True,runtimes.csv
+s0477,fast,50.6,True,runtimes.csv
+s0513,full,56.5,True,runtimes.csv
+s0513,fast,54.3,True,runtimes.csv
+s0519,full,57.4,True,runtimes.csv
+s0519,fast,53.4,True,runtimes.csv
+s0573,full,54.1,True,runtimes.csv
+s0573,fast,49.8,True,runtimes.csv
+s0591,full,59.0,True,runtimes.csv
+s0591,fast,56.9,True,runtimes.csv
+s0629,full,55.3,True,runtimes.csv
+s0629,fast,52.0,True,runtimes.csv
+s0649,full,55.2,True,runtimes.csv
+s0649,fast,54.2,True,runtimes.csv
+s0703,full,57.4,True,runtimes.csv
+s0703,fast,52.6,True,runtimes.csv
+s0720,full,60.0,True,runtimes.csv
+s0720,fast,57.1,True,runtimes.csv
+s0726,full,55.7,True,runtimes.csv
+s0726,fast,54.0,True,runtimes.csv

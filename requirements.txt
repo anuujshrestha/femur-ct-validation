@@ -1,0 +1,10 @@
+TotalSegmentator>=2.0
+nibabel
+numpy
+scipy
+pandas
+scikit-image
+trimesh
+opencv-python-headless
+matplotlib
+tabulate

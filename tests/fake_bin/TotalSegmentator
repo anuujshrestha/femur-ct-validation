@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+"""Fake TotalSegmentator for offline testing: copies GT masks, eroded once
+(normal mode) or dilated twice (--fast) so metrics are non-trivial."""
+import sys
+from pathlib import Path
+import numpy as np
+import nibabel as nib
+from scipy import ndimage
+
+args = sys.argv[1:]
+inp = Path(args[args.index("-i") + 1])
+out = Path(args[args.index("-o") + 1])
+fast = "--fast" in args
+roi = args[args.index("--roi_subset") + 1:]
+roi = [r for r in roi if not r.startswith("--")]
+out.mkdir(parents=True, exist_ok=True)
+for name in roi:
+    img = nib.load(str(inp.parent / "segmentations" / f"{name}.nii.gz"))
+    m = np.asanyarray(img.dataobj) > 0
+    m = ndimage.binary_dilation(m, iterations=2) if fast else ndimage.binary_erosion(m)
+    nib.save(nib.Nifti1Image(m.astype(np.uint8), img.affine), str(out / f"{name}.nii.gz"))
